@@ -343,6 +343,34 @@
     
     
         <article class="index-post">
+            <a class="abstract-title" href = "/2018/06/30/Unity常用的几种设计模式/" >
+                
+                    <span>Unity常用的几种设计模式</span>
+            </a>
+            <div class="abstract-content">
+                单例模式在游戏生命周期中，有些对象始终只有一个，直到游戏结束才需要销毁。例如各种管理器。为了能方便获取管理器信息，可以使用单例模式。  
+一般我们分两种单例，一种是继承MonoBehavior的单例，一种则不继承。当某些对象（管理器）需要跨场景使用时，需要进行DontDestroyOnLoad的处理。   
+下面是使用模板类实现单例的代码
+
+    //不继承于Mono的单例模式
+    public class Singleton where T:new()
+    {
+        protected static T _instance;
+        public stati...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/06/30</span>
+                </div>
+                <!-- tags  -->
+                
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
             <a class="abstract-title" href = "/2018/06/16/Unity3D-Mecanim动画系统使用1/" >
                 
                     <span>Unity3D Mecanim动画系统使用(1)</span>
@@ -455,7 +483,14 @@
     
     
     
-    <div class="total-archive"> Total : 1 </div>
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 2 </div>
     
     <div class="post-archive">
     
@@ -464,6 +499,11 @@
     
     <div class="archive-year"> 2018 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/30</span><a class="archive-post-title" href= "/2018/06/30/Unity常用的几种设计模式/" >Unity常用的几种设计模式</a>
+        </li>
     
     
         <li class="archive-post-item">
